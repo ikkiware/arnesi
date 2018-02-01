@@ -33,6 +33,10 @@ the vector ALPHABET.
                  (cl:aref alphabet (random alphabet-length)))
         finally (return id)))
 
+(defun random-string-plus ()
+  "Equal that random string but add universal time at the end of random-string."
+  (strcat  (random-string 30) (get-universal-time)))
+
 (declaim (inline strcat))
 (defun strcat (&rest items)
   "Returns a fresh string consisting of ITEMS concat'd together."

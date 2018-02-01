@@ -285,6 +285,7 @@
    #:+alphanumeric-ascii-alphabet+
    #:+base64-alphabet+
    #:random-string
+   #:random-string-plus
    #:strcat
    #:strcat*
    #:princ-csv
